@@ -1,0 +1,181 @@
+
+{% extends "accounts/student_layouts.html" %}
+
+{% block title %} Transactions {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<hr>
+<br>
+<br>
+<main>
+    <section>
+       
+    
+            <div class="row justify-content-center form-bg-image"
+                data-background-lg="/static/assets/img/illustrations/signin.svg">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="mb-0 h3" style="color: red;">
+                                Student - Registrations 
+                            </h1>
+                            <br />
+                            {% if student_obj.errors %}
+            <h1>ERRORRRRRR same email again???</h1>
+            {% endif %}
+
+
+                            {% for message in messages %}
+                            <div class="alert alert-{{message.extra_tags}} text-center" role="alert">
+                                          {{message}}
+                            </div>
+                                    {% endfor %}
+                            
+                        </div>
+                        
+                        <form method="post" action="{% url 'student_register' %}">
+
+                            {% csrf_token %}
+                            
+                            
+                            
+                           
+
+                            <label for="cars">Select School</label>
+                            <div class="form-group mb-4">
+                            <select name="school" class="form-control id="cars">
+                                {% for school_name in school %}
+                                <option  value="{{school_name.school}}">{{school_name.school}}</option>
+                                {% endfor %}
+                                
+                            </select>
+                            </div>
+                            <div class="form-group mb-4"><label for="email">First Name </label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="school" name="first_name" placeholder="First Name"
+                                        required="" type="text" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Last Name</label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="school" name="last_name" placeholder="Last Name"
+                                        required="" type="text" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Father Name</label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="school" name="father_name" placeholder="Father Name"
+                                        required="" type="text" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Mother Name</label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="school" name="mother_name" placeholder="Mother Name"
+                                        required="" type="text" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Your Email</label>
+                                <div class="input-group"><span class="input-group-text" id="basic-addon3"><span
+                                            class="fas fa-envelope"></span></span><input class="form-control"
+                                        id="id_email" name="email" placeholder="Email" required="" type="email" /></div>
+                                <span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Mobile number </label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="contact" name="contact_no" placeholder="contact number"
+                                        required="" type="number" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="gender">Gender</label>
+                                
+                            <br>
+                                <div class="form-group mb-4 form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male" />
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                </div>
+                                
+                                <div class="form-group mb-4 form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female" />
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                </div>
+                                
+                                <div class="form-group mb-4 form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="others" />
+                                    <label class="form-check-label" for="inlineRadio3">Others</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Birth Date</label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="city" name="dob" placeholder="city"
+                                        required="" type="date" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Address</label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="city" name="address" placeholder="city"
+                                        required="" type="text" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="sel1">Standard</label>
+                                
+                                            
+                                            <select class="form-control" id="sel1" name="standard">
+                                                <option selected>select standard</option>
+                                                <option value="1st">1st</option>
+                                                <option value="2nd">2nd</option>
+                                                <option value="3rd">3rd</option>
+                                                <option value="4th">4th</option>
+                                                <option value="5th">5th</option>
+                                                <option value="6th">6th</option>
+                                                <option value="7th">7th</option>
+                                                <option value="8th">8th</option>
+                                                <option value="9th">9th</option>
+                                                <option value="10th">10th</option>
+                                                <option value="11th">11th</option>
+                                                <option value="12th">12th</option>
+                                            </select>
+                                          
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Batch Year</label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="city" name="batch" placeholder="Batch Year"
+                                        required="" type="month" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group mb-4"><label for="email">Adhar Card No </label>
+                                <div class="input-group"></span><input autofocus=""
+                                        class="form-control" id="contact" name="adhar_card" placeholder="Adhar Card No"
+                                        required="" type="number" /></div><span class="text-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                
+                                
+                                
+                            </div><button class="btn btn-block btn-primary" name="register" type="submit">Register</button>
+                            <br>
+
+                        </form>
+                        
+                                
+                        
+
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+</main>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
