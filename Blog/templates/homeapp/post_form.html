@@ -1,0 +1,53 @@
+{% extends 'base.html' %}     
+{% block content %}
+{% load static %}
+    <!--banner start -->
+<button type="button" class="btn btn-dark btn-lg">
+    <a href="userlogout">Logout</a></button>
+
+	<div class="lets_touch_main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="input_main">
+						<form method="post">
+                            {% csrf_token %}
+					   <div class="container">
+							<div class="form-group">
+							
+							{{form.as_p}}
+
+							</div> 
+						</div>
+							<div class="send_btn">
+							<button  type="submit" name="submit" class="main_bt">Post</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+    <!--quote_section start -->
+    <div class="quote_section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6">
+    				<h1 class="quote_text">Quote for Today</h1>
+    				<p class="loan_text">It is a long established fact that a reader will be distracted by the readable content of a page </p>
+    			</div>
+    		    <div class="col-md-6">
+    			    <div class="quote_btn">
+    			        <button type="button" class="btn btn-dark btn-lg">Get A Quote</button>
+    		        </div>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+    
+    {% endblock %}

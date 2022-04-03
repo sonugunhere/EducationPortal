@@ -1,0 +1,52 @@
+{% extends 'base.html' %}     
+{% block content %}
+    
+
+    
+<div class="lets_touch_main">
+    <form action="profile_register" method="post">
+        {% csrf_token %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input_main">
+                   <div class="container">
+                      
+                        <div class="form-group">
+                          <input type="text" class="email-bt" placeholder="First Name" name="first_name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="email-bt" placeholder="Last Name" name="last_name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="email-bt" placeholder="Birth date " name="birth_date" required />
+                          </div>
+                        <div class="form-group">
+                            <input type="number" class="email-bt" placeholder="Mobile Number" name="mobile_number" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="email-bt" placeholder="Gender" name="gender" required />
+                          </div>
+                        <div class="form-group">
+                          <input type="email" class="email-bt" placeholder="Email id " name="email_id" required />
+                        </div>
+						<div class="form-group">
+							<input type="password" class="email-bt" placeholder="Password" name="password" required />
+						</div>
+				
+                    </div> 
+                    <div class="send_btn">
+                    <button  type="submit" name="submit" class="main_bt">Register</button>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    {{res}}
+    <p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+</div>
+  
+
+    <!--services end -->
+    {% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base copy.html' %}     
+{% block content %}
+{% load static %}
+    <!--banner start -->
+    <div class="banner-main">
+    	<div class="container">
+           <div id="main_slider" class="carousel slide" data-ride="carousel">  
+           <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+    		    <div class="titlepage-h1">
+    	        <h1 class="bnner_title">Welcome To <br>
+    	        <span style="color: #10b5fa">Thoughtwin IT Solutions</span></h1>
+    	        <p class="long_text">Thoughtwin IT Solutions assists to develop an impeccable website and mobile application. We serve on numerous domains and transform client's thoughts into reality.</p>
+    		    </div>
+    		    <div class="btn_main">
+    			<button type="button" class="btn btn-dark btn-lg"><a href="contact">Contact</a></button>
+            </div>
+        </div>
+
+  </div> 
+         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-right"></i>
+            </a>
+    </div>
+</div>
+</div>
+<!--banner end -->
+<section>
+
+</section>
+    
+    <!--quote_section start -->
+    <div class="quote_section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6">
+    				<h1 class="quote_text">Quote for Today</h1>
+    				<p class="loan_text"></p>
+    			</div>
+    		    <div class="col-md-6">
+    			    <div class="quote_btn">
+    			        <button type="button" class="btn btn-dark btn-lg">Get A Quote</button>
+    		        </div>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+    
+    {% endblock %}
