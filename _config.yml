@@ -1,1 +1,340 @@
-theme: jekyll-theme-time-machine
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>
+        School System
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Volt - Free Bootstrap 5 Admin Dashboard">
+    <meta name="author" content="Esystem">
+    <meta name="description"
+        content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+    <meta name="keywords"
+        content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, Esystem, Esystem dashboard, Esystem admin dashboard" />
+    <link rel="canonical" href="https://Esystem.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demo.Esystem.com/volt-pro">
+    <meta property="og:title" content="Volt - Free Bootstrap 5 Admin Dashboard">
+    <meta property="og:description"
+        content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+    <meta property="og:image"
+        content="https://Esystem.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://demo.Esystem.com/volt-pro">
+    <meta property="twitter:title" content="Volt - Free Bootstrap 5 Admin Dashboard">
+    <meta property="twitter:description"
+        content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+    <meta property="twitter:image"
+        content="https://Esystem.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/static/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Sweet Alert -->
+    <link type="text/css" href="/static/assets/vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Notyf -->
+    <link type="text/css" href="/static/assets/vendor/notyf/notyf.min.css" rel="stylesheet">
+
+    <!-- Volt CSS -->
+    <link type="text/css" href="/static/assets/css/volt.css" rel="stylesheet">
+
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+</head>
+
+<body>
+
+    
+                            
+
+    <header class="header-global">
+        <nav id="navbar-main" aria-label="Primary navigation"
+            class="navbar navbar-main navbar-expand-lg navbar-theme-primary pt-4 navbar-dark">
+            <div class="container position-relative">
+                <div class="navbar-collapse collapse me-auto" id="navbar_global">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="/">
+                                    <img src="/static/assets/img/brand/light.svg" alt="Volt logo">
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <a href="#navbar_global" class="fas fa-times" data-toggle="collapse"
+                                    data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
+                                    title="close" aria-label="Toggle navigation"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                        
+                        
+
+                        <a href="{% url 'student_register' %}" class="btn btn-outline-white d-inline-flex align-items-center me-md-3">
+                            <svg class="icon icon-xxs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z" clip-rule="evenodd"></path>
+                            </svg>
+                            Student Registeration
+                        </a>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center ms-auto">
+                    <a href="{% url 'login' %}"
+                        class="btn btn-outline-white d-inline-flex align-items-center me-md-3">
+                        <svg class="icon icon-xxs me-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        School Login
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        Hero
+        <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-9 pb-lg-12 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                    
+                        <h1 class="fw-bolder">School System</h1>
+                        <h2 class="lead fw-normal text-muted mb-5">
+                            abouts all school details
+                        </h2>
+
+
+                    </div>
+                </div>
+            </div>
+            <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"><svg class="home-pattern"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                    <path d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+                </svg></figure>
+        </section>
+
+
+        <div id="overviews" class="section wb">
+            <div class="container">
+                <div class="section-title row text-center">
+                    <div class="col-md-8 offset-md-2">
+                        <h3>About</h3>
+                        <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                    </div>
+                </div><!-- end title -->
+            
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="message-box">
+                            <h4>2018 BEST SmartEDU education school</h4>
+                            <h2>Welcome to SmartEDU education school</h2>
+                            <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+    
+                            <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
+    
+                            <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                        </div><!-- end messagebox -->
+                    </div><!-- end col -->
+                    
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="post-media wow fadeIn">
+                            <img src="/static/images/about_02.jpg" alt="" class="img-fluid img-rounded">
+                        </div><!-- end media -->
+                    </div><!-- end col -->
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="post-media wow fadeIn">
+                            <img src="/static/images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                        </div><!-- end media -->
+                    </div><!-- end col -->
+                    
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="message-box">
+                            <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                            <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum.</p>
+    
+                            <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                        </div><!-- end messagebox -->
+                    </div><!-- end col -->
+                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end section -->
+    
+        <section class="section lb page-section">
+            <div class="container">
+                 <div class="section-title row text-center">
+                    <div class="col-md-8 offset-md-2">
+                        <h3>Our history</h3>
+                        <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                    </div>
+                </div><!-- end title -->
+                <div class="timeline">
+                    <div class="timeline__wrap">
+                        <div class="timeline__items">
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-01">
+                                    <h2>2018</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-02">
+                                    <h2>2015</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-03">
+                                    <h2>2014</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-04">
+                                    <h2>2012</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-01">
+                                    <h2>2010</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-02">
+                                    <h2>2007</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-03">
+                                    <h2>2004</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content img-bg-04">
+                                    <h2>2002</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <footer class="footer py-6 bg-gray-800 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="navbar-brand-dark mb-4" height="35" src="/static/assets/img/brand/light.svg"
+                            alt="Logo light">
+                        <p></p>
+                        <ul class="social-buttons mb-5 mb-lg-0">
+                            <li>
+                                <a href="#" aria-label="twitter social link"
+                                    class="icon-white me-2">
+                                    <span class="fab fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" class="icon-white me-2"
+                                    aria-label="facebook social link">
+                                    <span class="fab fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="github social link"
+                                    class="icon-white me-2">
+                                    <span class="fab fa-github"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-white"
+                                    aria-label="dribbble social link">
+                                    <span class="fab fa-dribbble"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-5 mb-lg-0">
+                        <span class="h5">Esystem</span>
+                        <ul class="links-vertical mt-2">
+                            <li><a  href="#">Blog</a></li>
+                            <li><a  href="#">Products</a></li>
+                            <li><a  href="#">About Us</a></li>
+                            <li><a  href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-12 col-md-4 mb-5 mb-lg-0">
+                        <span class="h5 mb-3 d-block">Subscribe</span>
+                        <form action="#">
+                            <div class="form-row mb-2">
+                                <div class="col-12">
+                                    <input type="email" class="form-control mb-2" placeholder="example@company.com"
+                                        name="email" aria-label="Subscribe form" required>
+                                </div>
+                                <div class="col-12 d-grid">
+                                    <button type="submit" class="btn btn-secondary" data-loading-text="Sending">
+                                        <span>Subscribe</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="text-muted font-small m-0">We'll never share your details. See our <a
+                                class="text-white" href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <hr class="bg-gray-700 my-5">
+                <div class="row">
+                    
+                        <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+                            <p class="fw-normal font-small mb-0">
+                                &copy; Esystem 2022-<span class="current-year">2020</span> - coded by <a
+                                     href="#">Esystem</a>.</p>
+                        </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+        {% include 'includes/scripts.html' %}
+
+</body>
+
+</html>
