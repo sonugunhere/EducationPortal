@@ -50,6 +50,7 @@ class StudentRegisteration(models.Model):
     gender = models.CharField(choices = GENDER_CHOICES,max_length=10,default='Male')
     batch = models.CharField(max_length=10)
     adhar_card=models.CharField(max_length=12)
+    is_active = models.BooleanField(default=True)
     
     def __str__(self):
         return self.first_name
